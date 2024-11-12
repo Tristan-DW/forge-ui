@@ -1,6 +1,6 @@
 # Notes
 
-fix: edge case in request validation
+fix: correct response envelope format
 
-Timestamp: 2024-11-10T17:36:14Z
-Nonce: 338402
+Timestamp: 2024-11-12T07:35:26Z
+Nonce: 368328
