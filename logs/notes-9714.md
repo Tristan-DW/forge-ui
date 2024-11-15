@@ -1,6 +1,6 @@
 # Notes
 
-fix: resolve flaky test
+feat: add missing index to schema
 
-Timestamp: 2024-11-14T14:51:39Z
-Nonce: 534189
+Timestamp: 2024-11-15T14:58:41Z
+Nonce: 545235
