@@ -1,6 +1,6 @@
 # Notes
 
-feat: add missing index to schema
+docs: update inline comments
 
-Timestamp: 2024-11-15T14:58:41Z
-Nonce: 545235
+Timestamp: 2024-12-03T13:43:59Z
+Nonce: 126856
