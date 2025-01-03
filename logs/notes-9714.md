@@ -1,6 +1,6 @@
 # Notes
 
-feat: add missing index to schema
+fix: prevent duplicate submissions
 
-Timestamp: 2024-12-31T13:26:09Z
-Nonce: 692079
+Timestamp: 2025-01-03T18:26:37Z
+Nonce: 536720
