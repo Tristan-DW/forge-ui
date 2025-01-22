@@ -1,6 +1,6 @@
 # Notes
 
-feat: add missing index to schema
+fix: handle empty array input
 
-Timestamp: 2025-01-15T16:45:50Z
-Nonce: 209303
+Timestamp: 2025-01-22T17:25:41Z
+Nonce: 179135
