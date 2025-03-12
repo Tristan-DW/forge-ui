@@ -1,6 +1,6 @@
 # Notes
 
-fix: prevent duplicate submissions
+fix: correct off-by-one in pagination
 
-Timestamp: 2025-03-12T11:24:35Z
-Nonce: 643195
+Timestamp: 2025-03-12T18:14:56Z
+Nonce: 102742
