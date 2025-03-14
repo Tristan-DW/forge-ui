@@ -1,6 +1,6 @@
 # Notes
 
-fix: correct off-by-one in pagination
+fix: edge case in request validation
 
-Timestamp: 2025-03-12T18:14:56Z
-Nonce: 102742
+Timestamp: 2025-03-14T15:29:42Z
+Nonce: 553706
