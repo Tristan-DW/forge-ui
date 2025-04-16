@@ -1,6 +1,6 @@
 # Notes
 
-fix: type mismatch in serializer
+chore: tidy up unused variables
 
-Timestamp: 2025-04-15T14:13:24Z
-Nonce: 244029
+Timestamp: 2025-04-16T20:10:28Z
+Nonce: 238054
