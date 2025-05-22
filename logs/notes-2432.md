@@ -1,6 +1,6 @@
 # Notes
 
-fix: correct off-by-one in pagination
+feat: extend config options
 
-Timestamp: 2025-05-09T15:13:13Z
-Nonce: 899284
+Timestamp: 2025-05-22T15:34:55Z
+Nonce: 819956
