@@ -1,6 +1,6 @@
 # Notes
 
-fix: edge case in request validation
+fix: resolve flaky test
 
-Timestamp: 2025-06-10T14:33:25Z
-Nonce: 427146
+Timestamp: 2025-06-20T11:05:27Z
+Nonce: 244179
