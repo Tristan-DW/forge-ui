@@ -1,6 +1,6 @@
 # Notes
 
-feat: add missing index to schema
+refactor: rename for clarity
 
-Timestamp: 2025-07-24T08:48:49Z
-Nonce: 349930
+Timestamp: 2025-07-29T12:56:19Z
+Nonce: 883955
