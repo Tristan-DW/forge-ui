@@ -1,6 +1,6 @@
 # Notes
 
-feat: extend config options
+feat: add missing null checks
 
-Timestamp: 2025-09-18T11:52:44Z
-Nonce: 497881
+Timestamp: 2025-09-19T16:12:16Z
+Nonce: 880008
