@@ -1,6 +1,6 @@
 # Notes
 
-chore: update lockfile
+fix: type mismatch in serializer
 
-Timestamp: 2025-10-02T11:23:13Z
-Nonce: 374535
+Timestamp: 2025-10-16T13:23:50Z
+Nonce: 543515
