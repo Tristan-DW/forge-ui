@@ -1,6 +1,6 @@
 # Notes
 
-chore: tidy up unused variables
+feat: improve logging verbosity
 
-Timestamp: 2025-10-19T14:42:20Z
-Nonce: 846051
+Timestamp: 2025-10-20T13:33:16Z
+Nonce: 930373
