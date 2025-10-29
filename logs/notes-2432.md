@@ -1,6 +1,6 @@
 # Notes
 
-fix: correct default value handling
+feat: extend config options
 
-Timestamp: 2025-10-27T12:21:53Z
-Nonce: 538052
+Timestamp: 2025-10-29T15:33:18Z
+Nonce: 707555
