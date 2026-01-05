@@ -1,8 +1,8 @@
 # Activity Log
 
-## Entry 0120
+## Entry 0121
 
-- **Timestamp:** `2025-12-31T09:25:27Z`
-- **Commit:** 120 of 150
-- **Note:** refactor: consolidate duplicate logic
-- **Nonce:** 322095
+- **Timestamp:** `2026-01-05T11:10:26Z`
+- **Commit:** 121 of 150
+- **Note:** docs: update API endpoint documentation
+- **Nonce:** 302294
