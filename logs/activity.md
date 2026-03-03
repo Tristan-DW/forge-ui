@@ -1,8 +1,8 @@
 # Activity Log
 
-## Entry 0144
+## Entry 0145
 
-- **Timestamp:** `2026-03-03T10:24:17Z`
-- **Commit:** 144 of 150
-- **Note:** refactor: decouple business logic from transport
-- **Nonce:** 655008
+- **Timestamp:** `2026-03-03T12:19:08Z`
+- **Commit:** 145 of 150
+- **Note:** feat: add pagination to list endpoints
+- **Nonce:** 675965
