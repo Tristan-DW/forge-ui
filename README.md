@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=react,ts,tailwind,vite" />
+<img src="https://skillicons.dev/icons?i=react,ts,tailwind,vite,aws" />
 
 <br/>
 
@@ -9,11 +9,12 @@
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-238636?style=for-the-badge)
 
 # forge-ui
 
-> **React + TypeScript component library and dashboard kit - built for speed and consistency.**
+> **React + TypeScript component library and dashboard kit - built for production web apps and deployed via AWS CloudFront.**
 
 </div>
 
@@ -21,7 +22,7 @@
 
 ## Overview
 
-**forge-ui** is a production-ready component library built on React, TypeScript, and Tailwind CSS. It ships with a full suite of UI primitives, data display components, form controls, and a pre-built dashboard layout - everything needed to build polished web applications fast.
+**forge-ui** is a production-ready component library built on React, TypeScript, and Tailwind CSS. It ships a full suite of UI primitives, data display components, form controls, chart wrappers, and pre-built dashboard layouts. Static builds deploy to AWS S3 + CloudFront for global distribution.
 
 ---
 
@@ -55,14 +56,14 @@ App runs at `http://localhost:5173`
 ## Usage
 
 ```tsx
-import { Card, Badge, Stat, Table } from './components';
+import { Stat, Badge, Table, Card } from './components';
 
 export default function Dashboard() {
   return (
     <div className="grid grid-cols-3 gap-4">
       <Stat label="Total Users" value="12,483" change="+8.2%" trend="up" />
       <Stat label="Revenue" value="$94,210" change="+12.5%" trend="up" />
-      <Stat label="Churn Rate" value="2.1%" change="-0.4%" trend="down" />
+      <Stat label="Churn" value="2.1%" change="-0.4%" trend="down" />
 
       <Card className="col-span-3">
         <Table
@@ -71,13 +72,28 @@ export default function Dashboard() {
             { key: 'status', label: 'Status', render: (v) => <Badge variant={v}>{v}</Badge> },
             { key: 'created', label: 'Created' },
           ]}
-          data={users}
+          data={rows}
         />
       </Card>
     </div>
   );
 }
 ```
+
+---
+
+## Deployment
+
+```bash
+# Build
+npm run build
+
+# Deploy to AWS S3 + CloudFront
+aws s3 sync dist/ s3://your-bucket --delete
+aws cloudfront create-invalidation --distribution-id YOUR_DIST_ID --paths "/*"
+```
+
+Or use the included GitHub Actions workflow - it builds on push to `main` and deploys automatically.
 
 ---
 
@@ -88,18 +104,16 @@ forge-ui/
 ├── src/
 │   ├── components/
 │   │   ├── layout/
-│   │   ├── navigation/
 │   │   ├── data-display/
 │   │   ├── forms/
 │   │   ├── feedback/
 │   │   └── charts/
-│   ├── hooks/          # Custom React hooks
-│   ├── utils/          # Utility functions
-│   ├── types/          # TypeScript definitions
+│   ├── hooks/
+│   ├── utils/
 │   └── App.tsx
-├── public/
+├── .github/workflows/
+│   └── deploy-s3.yml
 ├── tailwind.config.ts
-├── tsconfig.json
 └── package.json
 ```
 
